@@ -1,4 +1,3 @@
-Check for performance issues and rewrite the code:
 import random as rnd
 import os
 import keyboard
