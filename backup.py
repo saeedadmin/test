@@ -17,20 +17,19 @@ def reload(msg):
         print(msg,"\n")
         os.system(f"python {'game.py'}")
 
+arycheck = [a,b,counter]
+
 def typechek(arg):
     for element in arg:
-        type_arg = type(element)
-    if type_arg != int:
+        type(element)
+    if type(element) != int:
         reload("you must inter numerical try again")
-    else:
-        continue
+    
+typechek(arycheck)
 
 def ext(msg):
     print (msg)
     exit()
-
-arycheck = [a,b,counter]
-typechek(arycheck)
 
 if int(a) >= int(b):
     reload ("a must be smaller than b try again")
