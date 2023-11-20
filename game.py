@@ -13,7 +13,7 @@ def get_input(prompt, type_func):
         except Exception as e:
             print("unknown keyboard", e)
 def main():
-    print('Welcome to my game. Please enter two numbers between which I will guess.',"\n guide: 1)ctrl+c => exit()\n guide: 2)give me two numbers number a bigger than number b\n guide: 3)if you don't want to give me numbers skeep that i will use the a = 0 and b = 100 and count = 4")
+    print('Welcome to my game. Please enter two numbers which I will guess.',"\n\n guide: \n 1)give me two numbers number a bigger than number b\n\n 2)if you don't want to give me numbers skeep that i will use the a = 0 and b = 100 and count = 4\n\n 3)ctrl+c => exit()\n\n")
     a = get_input('a = add number: ', int)
     b = get_input('b = add number bigger than a: ', int)
     if a + 1 >= b:
