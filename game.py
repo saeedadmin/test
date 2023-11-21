@@ -21,8 +21,9 @@ def main():
     print('Welcome to my game. Please enter two numbers which I will guess.\n\nGuide:\n1) Give me two numbers, number a bigger than number b.\n2) If you don\'t want to give me numbers, I will use a = 0, b = 100, and count = 4.\n3) Ctrl+C => exit()\n')
     a = get_input('a = add number: ', int)
     b = get_input('b = add number bigger than a: ', int)
-    if a == "" and b == "":
+    if a == "":
         a = 0 
+    if b == "":    
         b = 100
     if a + 1 >= b:
         print("a must be smaller than b. Please try again.")
